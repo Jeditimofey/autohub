@@ -9,7 +9,7 @@ module.exports = function(grunt){
 				options: {
 					pretty: true,
 					data: {
-						root:'/autohub',
+						root:'/autohub/views/pages',
 						staticRoot: '/autohub/public'
 					}
 				},
