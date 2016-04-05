@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="/autohub/public/css/main.css">
   </head>
   <body>
-    <header>
-      <h1 class="logo">АВТОХАБ</h1>
-      <nav class="mobile-nav"><a href="#" class="add-logo"></a><a href="#" class="filter-logo"></a><a href="#" class="close-logo"></a></nav>
+    <header><a href="#" class="logo"></a>
+      <nav class="mobile-nav">
+        <button href="#" class="add-logo"></button>
+        <button href="#" class="filter-logo"></button>
+        <button href="#" class="close-logo"></button>
+      </nav>
     </header>
     <aside class="filter-menu">
       <menu class="filter">
         <ul class="price-list-filter">
           <li class="list-header">Цена</li>
-          <li>от 5 000 $<a href="#" class="down-logo"></a></li>
-          <li>до 70 000 $<a href="#" class="down-logo"></a></li>
+          <li>от 5 000 $
+            <button href="#" class="down-logo"></button>
+          </li>
+          <li>до 70 000 $
+            <button href="#" class="down-logo"></button>
+          </li>
         </ul>
         <ul class="mark-list-filter">
           <li class="list-header">Марка</li>
@@ -43,16 +50,16 @@
             <p class="car-name">Mercedez</p>
             <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
           </figcaption>
-        </figure>
-        <figure>
-          <div class="car"><img src="/autohub/public/img/img_2.png" alt="img1">
-            <p class="car-price">2500$</p>
-          </div>
-          <figcaption>
-            <p class="car-name">Mercedez</p>
-            <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
-          </figcaption>
-        </figure>
+        </figure><a href="/autohub/views/pages/alfa-romeo.html">
+          <figure>
+            <div class="car"><img src="/autohub/public/img/img_2.png" alt="img1">
+              <p class="car-price">2500$</p>
+            </div>
+            <figcaption>
+              <p class="car-name">Mercedez</p>
+              <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
+            </figcaption>
+          </figure></a>
         <figure>
           <div class="car"><img src="/autohub/public/img/img_3.png" alt="img1">
             <p class="car-price">2500$</p>
@@ -118,6 +125,7 @@
         </figure>
       </div>
     </main>
+    <footer>&copy; Автохаб 2016</footer>
     <script src="/autohub/public/scripts/jquery-2.2.0.min.js"></script>
     <script src="/autohub/public/scripts/my_scripts.js"></script>
   </body>
