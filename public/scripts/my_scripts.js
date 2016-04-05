@@ -15,13 +15,20 @@ $(document).ready(function(){
 	}); 
 
 	$('.mark-list-filter li').click(function(){
+			if($(document).width() < 768){
+				$(this).toggleClass('checked');
 
-		$(this).toggleClass('checked');
-
-		if($(this).hasClass('checked')) {
-			$(this).append('<a href="#" class="check"></a>');
-		} else {
-			$(this).children('.check').remove();
-		}	
+				if($(this).hasClass('checked')) {
+					$(this).append('<a href="#" class="check"></a>');
+				} else {
+					$(this).children('.check').remove();
+				}
+			}
 	});
+
+	$('.check-desk').click(function(){
+			$(this).toggleClass('checked-desk');		
+	});
+
+
 });	
