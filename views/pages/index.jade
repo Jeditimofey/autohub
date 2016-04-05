@@ -8,19 +8,19 @@ html
 		
 	body
 		header
-			h1.logo АВТОХАБ
+			a(href="#").logo
 			nav.mobile-nav
-				a(href="#").add-logo
-				a(href="#").filter-logo
-				a(href="#").close-logo
+				button(href="#").add-logo
+				button(href="#").filter-logo
+				button(href="#").close-logo
 		aside.filter-menu
 			menu.filter
 				ul.price-list-filter
 					li.list-header Цена
 					li от 5 000 $
-						a(href="#").down-logo
+						button(href="#").down-logo
 					li до 70 000 $
-						a(href="#").down-logo
+						button(href="#").down-logo
 				ul.mark-list-filter
 					li.list-header Марка
 					li.checked Alfa Romeo 
@@ -52,17 +52,18 @@ html
 							span 47 000 kм
 							span Бензин 3.5
 							span А
-				figure
-					.car
-						img(src="#{staticRoot}/img/img_2.png", alt="img1")
-						p.car-price 2500$
-					figcaption
-						p.car-name Mercedez
-						p.car-info
-							span 2015
-							span 47 000 kм
-							span Бензин 3.5
-							span А
+				a(href="#{root}/alfa-romeo.html")
+					figure
+						.car
+							img(src="#{staticRoot}/img/img_2.png", alt="img1")
+							p.car-price 2500$
+						figcaption
+							p.car-name Mercedez
+							p.car-info
+								span 2015
+								span 47 000 kм
+								span Бензин 3.5
+								span А
 				figure
 					.car
 						img(src="#{staticRoot}/img/img_3.png", alt="img1")
@@ -140,6 +141,8 @@ html
 							span 47 000 kм
 							span Бензин 3.5
 							span А
+		footer
+			&copy; Автохаб 2016
 				
 		script(src='#{staticRoot}/scripts/jquery-2.2.0.min.js')
 		script(src='#{staticRoot}/scripts/my_scripts.js')

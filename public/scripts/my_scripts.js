@@ -14,6 +14,14 @@ $(document).ready(function(){
 		$(this).hide();
 	}); 
 
-});	
+	$('.mark-list-filter li').click(function(){
 
-	
+		$(this).toggleClass('checked');
+
+		if($(this).hasClass('checked')) {
+			$(this).append('<a href="#" class="check"></a>');
+		} else {
+			$(this).children('.check').remove();
+		}	
+	});
+});	

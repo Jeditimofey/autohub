@@ -14,7 +14,8 @@ module.exports = function(grunt){
 					}
 				},
 				files: {
-					'index.html': 'views/pages/index.jade'
+					'index.html': 'views/pages/index.jade',
+					'views/pages/alfa-romeo.html':'views/pages/alfa-romeo.jade'
 				}
 			}
 		}
