@@ -7,6 +7,11 @@ app.get('/', function(req, res, next){
 	next();
 });
 
+app.get('/alfa-romeo', function(req, res, next){
+	req.url = '/alfa-romeo.html';
+	next();
+});
+
 app.get('/*.html', function(req,res, next){
 	res.render('pages/' + req.params[0], {
 		root: '',
