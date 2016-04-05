@@ -502,3 +502,36 @@ footer p {
 	.content .cols.col-12
 		width: 100%
 */
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  header {
+    padding: 10px 15px;
+  }
+  .logo {
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+    height: 35px;
+    background: url("SVG/logo.svg");
+    background-size: 95px 35px;
+  }
+}
+@media screen and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .filter-menu {
+    margin-top: 50px;
+    width: 17%;
+  }
+  main .content {
+    margin-top: 50px;
+  }
+  figure {
+    float: left;
+    width: 26%;
+    margin: 0.4%;
+  }
+  figure:hover {
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+  }
+  .pager {
+    margin-left: 17%;
+  }
+}
