@@ -9,34 +9,43 @@ html
 	body
 		header
 			a(href="#").logo
+			span.total Найдено 5658 предложений
+			nav.nav
+				a(href="#") Разместить предложение
 			nav.mobile-nav
-				button(href="#").add-logo
-				button(href="#").filter-logo
-				button(href="#").close-logo
+				button.add-logo
+				button.filter-logo
+				button.close-logo
 		aside.filter-menu
 			menu.filter
 				ul.price-list-filter
 					li.list-header Цена
 					li от 5 000 $
-						button(href="#").down-logo
+						button.down-logo
 					li до 70 000 $
-						button(href="#").down-logo
+						button.down-logo
 				ul.mark-list-filter
 					li.list-header Марка
-					li.checked Alfa Romeo 
-						a(href="#").check
-					li.checked Audi
-						a(href="#").check
-					li.checked BMW
-						a(href="#").check
+					li Alfa Romeo 
+						span.check-desk
+					li Audi
+						span.check-desk
+					li BMW
+						span.check-desk
 					li Chevrolet
+						span.check-desk
 					li Citroen
+						span.check-desk
 					li Fiat
-					li.checked Ford
-						a(href="#").check
+						span.check-desk
+					li Ford
+						span.check-desk
 					li Honda
+						span.check-desk
 					li Hyindai
+						span.check-desk
 					li Infiniti
+						span.check-desk
 
 
 		main
@@ -141,6 +150,13 @@ html
 							span 47 000 kм
 							span Бензин 3.5
 							span А
+			.pager
+				ul
+					li.active 1
+					li 2
+					li 3
+					li 4
+					li 5
 		footer
 			&copy; Автохаб 2016
 				

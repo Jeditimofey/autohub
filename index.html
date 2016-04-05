@@ -7,29 +7,37 @@
     <link rel="stylesheet" href="/autohub/public/css/main.css">
   </head>
   <body>
-    <header>
-      <h1 class="logo">АВТОХАБ</h1>
-      <nav class="mobile-nav"><a href="#" class="add-logo"></a><a href="#" class="filter-logo"></a><a href="#" class="close-logo"></a></nav>
+    <header><a href="#" class="logo"></a><span class="total">Найдено 5658 предложений</span>
+      <nav class="nav"><a href="#">Разместить предложение</a></nav>
+      <nav class="mobile-nav">
+        <button class="add-logo"></button>
+        <button class="filter-logo"></button>
+        <button class="close-logo"></button>
+      </nav>
     </header>
     <aside class="filter-menu">
       <menu class="filter">
         <ul class="price-list-filter">
           <li class="list-header">Цена</li>
-          <li>от 5 000 $<a href="#" class="down-logo"></a></li>
-          <li>до 70 000 $<a href="#" class="down-logo"></a></li>
+          <li>от 5 000 $
+            <button class="down-logo"></button>
+          </li>
+          <li>до 70 000 $
+            <button class="down-logo"></button>
+          </li>
         </ul>
         <ul class="mark-list-filter">
           <li class="list-header">Марка</li>
-          <li class="checked">Alfa Romeo <a href="#" class="check"></a></li>
-          <li class="checked">Audi<a href="#" class="check"></a></li>
-          <li class="checked">BMW<a href="#" class="check"></a></li>
-          <li>Chevrolet</li>
-          <li>Citroen</li>
-          <li>Fiat</li>
-          <li class="checked">Ford<a href="#" class="check"></a></li>
-          <li>Honda</li>
-          <li>Hyindai</li>
-          <li>Infiniti</li>
+          <li>Alfa Romeo <span class="check-desk"></span></li>
+          <li>Audi<span class="check-desk"></span></li>
+          <li>BMW<span class="check-desk"></span></li>
+          <li>Chevrolet<span class="check-desk"></span></li>
+          <li>Citroen<span class="check-desk"></span></li>
+          <li>Fiat<span class="check-desk"></span></li>
+          <li>Ford<span class="check-desk"></span></li>
+          <li>Honda<span class="check-desk"></span></li>
+          <li>Hyindai<span class="check-desk"></span></li>
+          <li>Infiniti<span class="check-desk"></span></li>
         </ul>
       </menu>
     </aside>
@@ -43,16 +51,16 @@
             <p class="car-name">Mercedez</p>
             <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
           </figcaption>
-        </figure>
-        <figure>
-          <div class="car"><img src="/autohub/public/img/img_2.png" alt="img1">
-            <p class="car-price">2500$</p>
-          </div>
-          <figcaption>
-            <p class="car-name">Mercedez</p>
-            <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
-          </figcaption>
-        </figure>
+        </figure><a href="/autohub/views/pages/alfa-romeo.html">
+          <figure>
+            <div class="car"><img src="/autohub/public/img/img_2.png" alt="img1">
+              <p class="car-price">2500$</p>
+            </div>
+            <figcaption>
+              <p class="car-name">Mercedez</p>
+              <p class="car-info"><span>2015</span><span>47 000 kм</span><span>Бензин 3.5</span><span>А</span></p>
+            </figcaption>
+          </figure></a>
         <figure>
           <div class="car"><img src="/autohub/public/img/img_3.png" alt="img1">
             <p class="car-price">2500$</p>
@@ -117,7 +125,17 @@
           </figcaption>
         </figure>
       </div>
+      <div class="pager">
+        <ul>
+          <li class="active">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div>
     </main>
+    <footer>&copy; Автохаб 2016</footer>
     <script src="/autohub/public/scripts/jquery-2.2.0.min.js"></script>
     <script src="/autohub/public/scripts/my_scripts.js"></script>
   </body>
